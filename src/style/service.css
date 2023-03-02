@@ -1,0 +1,81 @@
+.service {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.service_title_content {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.service_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.service_text_content {
+    width: 60%;
+    color: gray;
+    font-size: clamp(10px, 6vw, 25px);
+}
+
+.service_section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.technologie_container {
+    display: flex;
+}
+
+.technologie_container ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    gap: 15px;
+    padding: 0px;
+}
+
+@media (max-width : 1200px) {
+    .contact_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 425px) {
+    .service_Container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width : 768px) {
+    .service_text_content {
+        width: 100%;
+        text-align: start;
+    }
+
+    .service_Container {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .contact_container {
+        gap: 10px;
+    }
+}
+
+.TypewriterTitle {
+    font-size: clamp(12px, 5vw, 25px);
+}
